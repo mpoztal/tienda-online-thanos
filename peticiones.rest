@@ -1,0 +1,52 @@
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Ho",
+    "description": "Hace la comida solita",
+    "price": 990,
+    "department": "cocina",
+    "available": true,
+    "created_at": "2022-08-04"
+
+}
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "username": "Ma",
+    "email": "manolito@gmailcom",
+    "password": "12345",
+    "active": true,
+    "role": "admin"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "manolito@gmail.com",
+    "password": "12345"
+}
+
+###
+GET  http://localhost:3000/api/products
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNmNzQ4ZjhjNDk5NzczN2Q0NjQ0NWZlIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc3MTY2MTc2fQ.7EeL8VJd5HKTTlUinWwN9-YqJYbRVrlxzeoPryNHETo
+
+
+###
+GET  http://localhost:3000/api/products/add/63f3a2b4c916176b23a7eca5
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNmNzQ4ZjhjNDk5NzczN2Q0NjQ0NWZlIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc3MTY2MTc2fQ.7EeL8VJd5HKTTlUinWwN9-YqJYbRVrlxzeoPryNHETo
+
+
+###
+GET  http://localhost:3000/api/products/cart
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNmNzQ4ZjhjNDk5NzczN2Q0NjQ0NWZlIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc3MTY2MTc2fQ.7EeL8VJd5HKTTlUinWwN9-YqJYbRVrlxzeoPryNHETo
+
+###
+GET  http://localhost:3000/api/users/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjNmNzQ4ZjhjNDk5NzczN2Q0NjQ0NWZlIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc3MTY2MTc2fQ.7EeL8VJd5HKTTlUinWwN9-YqJYbRVrlxzeoPryNHETo
+
